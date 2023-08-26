@@ -1,0 +1,30 @@
+@font-face {
+  font-family: digits;
+  src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+body {
+  font-family: verdana, 'segoe UI', ;
+  font-size: 3rem;
+  background: #1B244A;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+h3 {
+  font-family: digits;
+  color: #F94F6D;
+}
+
+
+
+
+/*
+#9AABD8 -  borders and adding font color
+#EEEEEE - team name font
+#080001 - score background
+ */
