@@ -1,30 +1,114 @@
+/*
+#9AABD8 - borders and adding font color
+#EEEEEE - team name font
+#080001 - score background
+ */
+
 @font-face {
   font-family: digits;
   src: url(CursedTimerUlil-Aznm.ttf);
 }
 
+html {
+  font-size: 16px;
+  background-color: black;
+}
+
 body {
-  font-family: verdana, 'segoe UI', ;
-  font-size: 3rem;
-  background: #1B244A;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
 }
 
-.container {
-  display: flex;
-  justify-content: space-around;
+h1 {
+  font-family: digits;
+  font-size: 5.4rem;
+  color: #F94F6D;
+  text-align: center;
+  margin: 0 auto -15px auto;
 }
 
 h3 {
-  font-family: digits;
-  color: #F94F6D;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.7rem;
+  margin: 0;
+  color: #EEE;
 }
 
+.container-container {
+  display: flex;
+  justify-content: center;
+  width: 92%;
+  margin: 25px auto;
+}
 
+.scoreboard {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-around;
+  background: #1B244A;
+  width: 80%;
+  max-width: 500px;
+  border: 5px solid #10152c;
+  border-radius: 5px;
+  padding: 20px;
+}
 
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+  align-items: center;
+  border-radius: 5px;
+  padding: 12px 8px;
+}
 
-/*
-#9AABD8 -  borders and adding font color
-#EEEEEE - team name font
-#080001 - score background
- */
+.score-box {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background: #080001;
+  width: 155px;
+  height: 110px;
+  border-radius: 5px;
+  padding: 0px 5px;
+  margin: 10px 0 0 0;
+}
+
+.add-points {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.add-points button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: digits, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  color: #7B88AC;
+  border: 2px solid #a8b7dd;
+  box-shadow: 2px 2px 1px #182034;
+  border-radius: 8px;
+  height: 40px;
+  width: 45px;
+  padding-top: 4px;
+  margin: 0;
+}
+
+button:hover {
+  background: #d3daee;
+  color: #63729d;
+  border: 2px solid #63729d;
+  box-shadow: none;
+  /* transition: .5s; */
+}
+
+button:active {
+  /* background-color: #3e8e41; */
+  box-shadow: 2px 2px #182034;
+  transform: translateY(2px);
+}
