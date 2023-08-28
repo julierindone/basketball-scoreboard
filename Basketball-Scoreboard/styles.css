@@ -37,12 +37,13 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  width: 92%;
+  width: 80%;
+  max-width: 650px;
   background: #1B244A;
   border: 5px solid #10152c;
   border-radius: 8px;
   padding: 10px;
-  margin: 0 auto;
+  margin: 15px auto;
 }
 
 .scoreboard {
@@ -50,8 +51,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 40px;
-  width: 80%;
-  max-width: 500px;
+  width: 90%;
   border-radius: 5px;
   padding: 10px;
 }
@@ -63,7 +63,7 @@ h3 {
   align-items: center;
   height: 250px;
   border-radius: 5px;
-  padding: 2px 8px;
+  padding: 2px 12px;
 }
 
 .score-box {
@@ -91,6 +91,10 @@ h3 {
   width: 45px;
   padding-top: 4px;
   margin: 0;
+}
+
+div.scoreboard-reset {
+  margin-bottom:15px;
 }
 
 button.reset-btn {
