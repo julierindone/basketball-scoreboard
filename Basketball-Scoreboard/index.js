@@ -9,8 +9,6 @@ let guestScore = 0
 let homeLeadEl = document.getElementById("home-lead")
 let guestLeadEl = document.getElementById("guest-lead")
 
-// I can add a parameter and refactor to use same function for at least add-one for both teams.
-// For now, keeping it simple and just making it work for one.
 function add(numPoints, team = "home") {
   if (team == "guest") {
     guestScore += numPoints
@@ -41,13 +39,17 @@ function lightBorder() {
   else if (guestScore > homeScore) {
     guestLeadEl.style.border = lightBorderStyle
     homeLeadEl.style.border = noBorderStyle
-  
+
   }
-  // if (homeScore == guestScore)  
   else {
     homeLeadEl.style.border = lightBorderStyle
     guestLeadEl.style.border = lightBorderStyle
   }
+}
+function resetScore() {
+  homeScore = 0
+  guestScore = 0
 
-
+  homeScoreEl.textContent = homeScore
+  guestScoreEl.textContent = guestScore
 }

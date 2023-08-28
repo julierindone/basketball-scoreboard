@@ -1,8 +1,4 @@
-/*
-#9AABD8 - borders and adding font color
-#EEEEEE - team name font
-#080001 - score background
- */
+/* css */
 
 @font-face {
   font-family: digits;
@@ -11,7 +7,7 @@
 
 html {
   font-size: 16px;
-  background-color: black;
+  background-color: #10152c;
 }
 
 body {
@@ -28,75 +24,96 @@ h1 {
 }
 
 h3 {
+  color: #EEE;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2.7rem;
   margin: 0;
-  color: #EEE;
 }
 
-.container-container {
+.scoreboard-container {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  gap: 20px;
   width: 92%;
-  margin: 25px auto;
+  background: #1B244A;
+  border: 5px solid #10152c;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 0 auto;
 }
 
 .scoreboard {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 40px;
   justify-content: space-around;
-  background: #1B244A;
+  gap: 40px;
   width: 80%;
   max-width: 500px;
-  border: 5px solid #10152c;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .team {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 250px;
   align-items: center;
+  height: 250px;
   border-radius: 5px;
-  padding: 12px 8px;
+  padding: 2px 8px;
 }
 
 .score-box {
   display: flex;
   justify-content: right;
   align-items: center;
-  background: #080001;
   width: 155px;
   height: 110px;
+  background: #080001;
   border-radius: 5px;
-  padding: 0px 5px;
+  padding: 0 5px;
   margin: 10px 0 0 0;
 }
 
 .add-points {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
   margin-top: 20px;
 }
 
 .add-points button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: digits, 'Segoe UI', sans-serif;
-  font-size: 1rem;
-  color: #7B88AC;
-  border: 2px solid #a8b7dd;
-  box-shadow: 2px 2px 1px #182034;
-  border-radius: 8px;
   height: 40px;
   width: 45px;
   padding-top: 4px;
   margin: 0;
+}
+
+button.reset-btn {
+  font-weight: 900;
+  height: 52px;
+  width: 170px;
+  padding: 0px 15px;
+  margin: 10px 0;
+}
+
+.reset-btn:hover {
+  color: #F94F6D;
+  border: 3px solid #F94F6D;
+}
+
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  color: #7B88AC;
+  border: 2px solid #a8b7dd;
+  box-shadow: 2px 2px 1px #182034;
+  background-color: #EEEEEE;
+  border-radius: 8px;
 }
 
 button:hover {
@@ -104,11 +121,10 @@ button:hover {
   color: #63729d;
   border: 2px solid #63729d;
   box-shadow: none;
-  /* transition: .5s; */
+  transition: .3s;
 }
 
 button:active {
-  /* background-color: #3e8e41; */
   box-shadow: 2px 2px #182034;
   transform: translateY(2px);
 }
